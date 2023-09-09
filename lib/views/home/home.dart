@@ -26,10 +26,13 @@ class Home extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const SizedBox(height: 16),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(8),
-                        child: Image.network(
-                          'https://res.cloudinary.com/dbql17dyz/image/upload/v1694251329/profile-pic_geigt8.png',
+                      Hero(
+                        tag: 'profile',
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Image.network(
+                            'https://res.cloudinary.com/dbql17dyz/image/upload/v1694251329/profile-pic_geigt8.png',
+                          ),
                         ),
                       ),
                       const SizedBox(height: 16),

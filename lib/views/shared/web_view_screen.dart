@@ -33,6 +33,23 @@ class WebViewScreenState extends State<WebViewScreen> {
         elevation: 0,
         backgroundColor: Colors.transparent,
         title: Text(widget.title),
+        actions: [
+          Hero(
+            tag: 'profile',
+            child: Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 8,
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(4),
+                child: Image.network(
+                  'https://res.cloudinary.com/dbql17dyz/image/upload/v1694251329/profile-pic_geigt8.png',
+                ),
+              ),
+            ),
+          )
+        ],
       ),
       body: Stack(
         children: <Widget>[
